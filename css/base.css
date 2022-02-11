@@ -1,0 +1,55 @@
+html {
+  background-color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-container {
+  background-color: rgb(110, 222, 76);
+  /* padding: 10px; */
+  position: relative;
+}
+
+.flex-container::before {
+  content: "Flex Container";
+  position: absolute;
+  top: -40px;
+  color: rgb(110, 222, 76);
+  font-size: 2em;
+}
+
+.flex-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item::before {
+  content: "Flex Item";
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  top: 10px;
+  left: 15px;
+}
+
+.flex-item::after {
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  top: 10px;
+  right: 15px;
+}
+
+.flex-item-1::after {
+  content: "1";
+}
+
+.flex-item-2::after {
+  content: "2";
+}
+
+.flex-item-3::after {
+  content: "3";
+}
